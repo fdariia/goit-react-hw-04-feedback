@@ -12,6 +12,7 @@ const App = () => {
   const options = ['good', 'neutral', 'bad'];
 
   const onButtonClick = event => {
+    console.log(event.target.name);
     const { name } = event.target;
 
     switch (name) {
@@ -26,6 +27,9 @@ const App = () => {
       case 'bad':
         setBad(bad + 1);
         break;
+
+      default:
+        return;
     }
   };
 
