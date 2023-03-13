@@ -9,10 +9,9 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const options = ['good', 'neutral', 'bad'];
+  const options = {good, neutral, bad};
 
   const onButtonClick = event => {
-    console.log(event.target.name);
     const { name } = event.target;
 
     switch (name) {
